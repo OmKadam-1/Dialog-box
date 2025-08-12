@@ -6,7 +6,34 @@
     <title>Dialog Box</title>
     
 </head>
-<body>
-    
+<body id="container">
+     <div class="content">
+        <h1 style="color: gray;">Welcome to community</h1>
+        <p>Our Community is for IT Students and Proffessionals</p>
+        <p>For More Information Join Our Community</p>
+
+        <button onclick="dialog()" id="button">Join Community</button>
+
+    </div>
+    <div class="container">
+
+        <div class="dialog" id="dialog">
+            <form>
+                <label class="label">Your Name:-</label><br><br>
+                <input type="text" class="input" required><br><br>
+                <label class="label">Proffesion:-</label><br><br>
+                <select class="input">
+                    <option>Information Technology</option>
+                    <option>Computer Science</option>
+                </select><br><br>
+                <label class="label">Date of birth:- </label><br><br>
+                <input type="date" required class="input">
+            </form>
+            <div class="buttons">
+                <button onclick="closedialog()" class="button-1">Join</button>
+                <button onclick="closedialog()" class="button-2">Close</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
